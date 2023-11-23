@@ -62,7 +62,6 @@ function sendMessage() {
 function displayMessage(name, text) {
     const messagesList = $('#messages');
     const messageElement = $('<li>');
-    messageElement.class('you');
     messageElement.text(`${name}: ${text}`);
     messagesList.append(messageElement);
 }
